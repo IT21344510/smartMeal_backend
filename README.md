@@ -292,7 +292,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   - Display: timeline cards for stage/risk, forecast tiles, and an alerts lane fed directly from `alerts` (no separate model).
   - Graphs: 7-day glucose trend and forecast arrows; chips showing top explanations.
 
-## UI blueprint for the Explainable AI system (mobile Flutter)
+## UI blueprint for the Explainable AI system (Flutter)
 - **Inputs drawer**: Collapsible sheet with the Model 1 fields (fasting/post-meal glucose, trend array, HbA1c history, carbs/day, activity minutes/day, medication adherence %, age, BMI, behavior consistency) with unit helpers and preset chips.
 - **Hero insights row**:
   - Card 1: Insulin dose result with a slim meter indicating position vs usual range; CTA to log/confirm dose.
