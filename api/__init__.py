@@ -1,0 +1,1 @@
+"""SmartMeal API package."""

@@ -1,0 +1,68 @@
+# ================================
+# Python
+# ================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.err
+
+# ================================
+# Virtual Environments
+# ================================
+.venv/
+venv/
+env/
+tfenv/
+tf310/
+.venv_tf/
+.venv310/
+
+# ================================
+# Jupyter / Notebooks
+# ================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ================================
+# Machine Learning Artifacts
+# ================================
+*.h5
+*.keras
+saved_model/
+checkpoints/
+*.joblib
+*.npz
+
+# ================================
+# Temporary / Cache Files
+# ================================
+*.tmp
+*.bak
+*.swp
+
+# ================================
+# OS / Editor Files
+# ================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ================================
+# Python Build / Distribution
+# ================================
+build/
+dist/
+*.egg-info/
+
+# ================================
+# Optional: logs & runtime output
+# ================================
+logs/
+logs
+.log
+.env
+
+food_types/

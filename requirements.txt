@@ -1,0 +1,14 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+python-multipart>=0.0.9
+Pillow>=9.5.0
+
+# ML stack (TF 2.10 compatible)
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.7.2
+joblib==1.2.0
+xgboost==1.7.6
+
+# Deep learning
+tensorflow==2.10.0
