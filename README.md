@@ -278,7 +278,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   ```
 
 ### Frontend contract for each current output
-- **Insulin dose**
+- **Insulin dosage**
   - Field: `predicted_insulin_dose` (float)
   - Display: numeric dose with unit label and optional client-side confidence band.
   - Graphs: small bar vs patient baseline; time series if history is stored.
