@@ -306,5 +306,5 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 - **Future care plan**: Compact card listing `checkup_schedule` and top `future_treatment_recommendations`.
 - **Action bar**: Quick actions like "Share with doctor," "Download PDF summary," and "Set reminder" keyed off the latest alert severity.
 
-## Single-model alignment (stage + risk + forecast + alerts) risky
+## Single-model alignment (stage + risk + forecast + alerts) 
 Model 1 is the only explainable module. Alert and recommendation generation now rides inside the same multi-task pipeline, so there is no Model 2 to maintain or expose.
