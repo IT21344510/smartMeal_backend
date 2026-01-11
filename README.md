@@ -159,7 +159,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 - Set `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `SMTP_PORT` (default 587), and optional `ALERT_FROM_EMAIL`.
 - Emails are sent when SMTP is configured and the selected permission allows immediate alerts.
 
-### Sample response (Model 1 - stage + risk + forecast + alerts)
+### Sample response (Model 1 - stage + risk + forecast + alerts risky / not risky)
 ```json
 {
   "model": "integrated_patient_health",
