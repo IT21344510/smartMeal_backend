@@ -259,7 +259,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   ```json
   {
     "stage": "Managed",
-    "stage_confidence": 120,
+    "stage_confidence": 0.97,
     "risk_score": 31,
     "risk_level": "Low",
     "risk_explanations": [
@@ -277,7 +277,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   }
   ```
 
-### Frontend contract for each current output
+### Frontend contract for each current input
 - **Insulin dose**
   - Field: `predicted_insulin_dose` (float)
   - Display: numeric dose with unit label and optional client-side confidence band.
