@@ -1,3 +1,11 @@
+"""
+Meal Service Layer
+
+Handles request validation and delegates to Model B (MealOptimizer).
+This keeps API routes thin and places business logic in one location.
+"""
+
+
 from __future__ import annotations
 
 import logging
