@@ -150,7 +150,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 }
 ```
 
-### Alert contacts and permissions
+### Alert contacts and permissions for output
 - Use `alert_contacts` to add family members and doctors for alert notifications.
 - `permission` options: `all`, `emergency_only`, `weekly_summary`, `high_risk_only`.
 - `notify_email` is still supported for a single recipient if you do not supply `alert_contacts`.
