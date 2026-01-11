@@ -1,3 +1,22 @@
+"""
+Model B - Meal Optimizer
+
+Purpose:
+- Loads a trained ML model (joblib) and a preprocessed meal dataset (CSV)
+- Filters meals based on allergies/avoid items + user feedback (accept/reject)
+- Scores candidate meals using calories + preferences + basic nutrition signals
+- Produces:
+  - Top meal recommendations
+  - Weekly meal calendar (3 meals/day)
+  - Grocery list suggestions
+  - Simple personalized adjustments for the frontend
+
+Notes:
+- Model and dataset paths can be overridden using environment variables:
+  SMARTMEAL_MODEL_B_PATH, SMARTMEAL_MODEL_B_DATASET
+"""
+
+
 from __future__ import annotations
 
 import logging
