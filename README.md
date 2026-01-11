@@ -2,7 +2,7 @@
 
 FastAPI service that hosts the insulin dose and kidney-risk predictors for the SmartMeal Flutter app, plus a single explainable stage/risk/forecast/alert system derived from `Explainable-AI-system/diabetic.ipynb`.
 
-## Quick start
+## Quick start (open)
 1) `python -m venv .venv` then activate it.
 2) `pip install -r requirements.txt`
 3) Run the API: `uvicorn api.main:app --reload --host 0.0.0.0 --port 8000`
