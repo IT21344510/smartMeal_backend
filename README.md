@@ -259,7 +259,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   ```json
   {
     "stage": "Managed",
-    "stage_confidence": 0.97,
+    "stage_confidence": 120,
     "risk_score": 31,
     "risk_level": "Low",
     "risk_explanations": [
