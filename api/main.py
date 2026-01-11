@@ -1,3 +1,16 @@
+"""
+SmartMeal Backend API
+
+This FastAPI application provides endpoints for:
+- Insulin dose prediction
+- Kidney health risk classification
+- AI-based meal and food analysis
+- Integrated explainable health risk forecasting
+
+This file acts as the main entry point for the backend service.
+"""
+
+
 from __future__ import annotations
 
 import logging
