@@ -282,7 +282,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   - Field: `predicted_insulin_dose` (float)
   - Display: numeric dose with unit label and optional client-side confidence band.
   - Graphs: small bar vs patient baseline; time series if history is stored.
-- **Kidney health**
+- **Kidney health**111
   - Field: `predicted_kidney_health` (string: Good|Risk)
   - Reasons: `kidney_risk_explanations` (list of strings for top drivers/protective factors)
   - Display: badge with color (green for Good, amber/red for Risk) plus a short tip.
