@@ -2,7 +2,7 @@
 
 FastAPI service that hosts the insulin dose and kidney-risk predictors for the SmartMeal Flutter app, plus a single explainable stage/risk/forecast/alert system derived from `Explainable-AI-system/diabetic.ipynb`.
 
-## Quick start
+## Quick start (open)
 1) `python -m venv .venv` then activate it.
 2) `pip install -r requirements.txt`
 3) Run the API: `uvicorn api.main:app --reload --host 0.0.0.0 --port 8000`
@@ -150,7 +150,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 }
 ```
 
-### Alert contacts and permissions
+### Alert contacts and permissions 
 - Use `alert_contacts` to add family members and doctors for alert notifications.
 - `permission` options: `all`, `emergency_only`, `weekly_summary`, `high_risk_only`.
 - `notify_email` is still supported for a single recipient if you do not supply `alert_contacts`.
@@ -159,7 +159,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 - Set `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`, `SMTP_PORT` (default 587), and optional `ALERT_FROM_EMAIL`.
 - Emails are sent when SMTP is configured and the selected permission allows immediate alerts.
 
-### Sample response (Model 1 - stage + risk + forecast + alerts)
+### Sample response (Model 1 - stage + risk + forecast + alerts risky / not risky)
 ```json
 {
   "model": "integrated_patient_health",
@@ -277,7 +277,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   }
   ```
 
-### Frontend contract for each current output
+### Frontend contract for each current input
 - **Insulin dose**
   - Field: `predicted_insulin_dose` (float)
   - Display: numeric dose with unit label and optional client-side confidence band.
@@ -292,7 +292,7 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
   - Display: timeline cards for stage/risk, forecast tiles, and an alerts lane fed directly from `alerts` (no separate model).
   - Graphs: 7-day glucose trend and forecast arrows; chips showing top explanations.
 
-## UI blueprint for the Explainable AI system (mobile Flutter)
+## UI blueprint for the Explainable AI system (Flutter)
 - **Inputs drawer**: Collapsible sheet with the Model 1 fields (fasting/post-meal glucose, trend array, HbA1c history, carbs/day, activity minutes/day, medication adherence %, age, BMI, behavior consistency) with unit helpers and preset chips.
 - **Hero insights row**:
   - Card 1: Insulin dose result with a slim meter indicating position vs usual range; CTA to log/confirm dose.
@@ -306,5 +306,5 @@ These replace opaque fields like `race`, `admission_type_id`, and `encounter_bur
 - **Future care plan**: Compact card listing `checkup_schedule` and top `future_treatment_recommendations`.
 - **Action bar**: Quick actions like "Share with doctor," "Download PDF summary," and "Set reminder" keyed off the latest alert severity.
 
-## Single-model alignment (stage + risk + forecast + alerts)
+## Single-model alignment (stage + risk + forecast + alerts) 
 Model 1 is the only explainable module. Alert and recommendation generation now rides inside the same multi-task pipeline, so there is no Model 2 to maintain or expose.

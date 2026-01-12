@@ -17,6 +17,7 @@ from api import alert_engine
 from api.meal_service import FoodPrediction, FoodRecognitionEngine
 from api.meal_optimizer import MealOptimizer
 
+#error handling
 try:
     import joblib
 except ImportError:  # pragma: no cover - optional dependency
@@ -42,7 +43,6 @@ class PredictRequest(BaseModel):
     glucose_trend_mg_dl: Optional[List[float]] = Field(
         None, description="Optional CGM trend values to refine timing adjustments."
     )
-
 
 class KidneyAlert(BaseModel):
     alert_type: str
